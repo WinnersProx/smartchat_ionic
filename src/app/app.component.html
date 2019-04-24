@@ -1,0 +1,30 @@
+<ion-app>
+  <ion-split-pane contentId="mainSidebar" *ngIf="this.AuthUser">
+      <ion-menu side="start" menuId="side" class="sideMenu" swipeGesture="true" type="overlay">
+          <ion-content>
+            <ion-item>
+              <ion-avatar>
+                <img src="../../assets/{{ this.AuthUser.avatar }}">
+              </ion-avatar>
+              <div>
+                {{ this.AuthUser.email }}
+              </div>
+            </ion-item>
+            <ion-list>
+              <ion-item>
+                <ion-icon name="home"></ion-icon> Home
+              </ion-item>
+              <ion-item>Posts</ion-item>
+              <ion-item>Action</ion-item>
+              <ion-item>
+                <ion-icon name="cog" color="light"></ion-icon>Settings
+              </ion-item>
+              <ion-item>
+                <ion-icon name="eye-off" color="light"></ion-icon>Logout
+              </ion-item>
+            </ion-list>
+          </ion-content>
+        </ion-menu>
+  </ion-split-pane>
+  <ion-router-outlet></ion-router-outlet>
+</ion-app>

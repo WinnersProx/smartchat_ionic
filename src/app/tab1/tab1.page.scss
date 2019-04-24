@@ -1,0 +1,23 @@
+.welcome-card ion-img {
+  max-height: 35vh;
+  overflow: hidden;
+}
+ion-content{
+  .text-bold{
+    font-family: inherit;
+  }
+  .text-muted{
+    font-weight: normal;
+    font-style: unset;
+    font-family: unset;
+    color:gray;
+    .m_content{
+      font-size: 1.1em;
+    }
+  }
+  i.text-muted{
+    float: right;
+    line-height: initial;
+    font-size: .9em;
+  }
+}

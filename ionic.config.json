@@ -1,0 +1,9 @@
+{
+  "name": "rentbox",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "0185827b",
+  "proxy": "http://localhost/smartchat_api/"
+}
